@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <!--
     Name: Elaine Zhu
     Date Created: 2/1/2020
-    Most recent revision:
+    Most recent revision: 2/11/2020
 -->
 <html lang="en">
 <head>
@@ -11,8 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Contact Us</title>
-    <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
     <!--css styles-->
     <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
       <!--nav pills-->
@@ -20,8 +18,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!--home font-->
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--JavaScript-->
+    <script type="text/JavaScript" src="restaurantSite.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <noscript>
+    <div class="error message">
+        We're sorry but our site <strong>requires</strong> JavaScript.
+    </div>
+    </noscript>
 </head>
 
 <body>
@@ -41,38 +48,45 @@
     <hr/>
 
 <p>
+<div class="w3-container">
+<form name="restaurantSite" onsubmit="return validateItems()" class="form-inline">
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name"> <br/></p>
+    <input type="text" id="name" name="name"> <br/>
+</form>
+</p>
 
 <p>
+<form name="restaurantSite" onsubmit="return validateItems()" class="form-inline">
     <label for="email">Email:</label>
-    <input type="text" id="email" name="email"> <br/></p>
+    <input type="text" id="email" name="email"> <br/>
+</form>
+</p>
 
 <p>
+<form name="restaurantSite" onsubmit="return validateItems()" class="form-inline">
     <label for="phone">Phone:</label>
-    <input type="number" id="phone" name="phone"> <br/></p>
+    <input type="number" id="phone" name="phone"> <br/>
+</form>
+</p>
 
-<p>
     <label for="reason">Reason for Inquiry:</label>
     <select id="reason" name="reason">
       <option value="default" selected>Catering</option>
       <option value="privateParty">Private Party</option>
       <option value="feedback">Feedback</option>
       <option value="other">Other</option>
-    </select> <br/> </p>
+    </select> <br/>
 
-<p>
     <label for="info">Addional Information:</label>
-    <textarea id="info" name="info"></textarea> <br/></p>
+    <textarea id="info" name="info"></textarea> <br/>
 
-<p>
     <label for="questionnaire">Have you been to the restaurant?</label>
     <input type="radio" id="choice1" name="questionnaire" value="no">
     <label for="choice1">No</label>
     <input type="radio" id="choice2" name="questionnaire" value="yes">
-    <label for="choice2">Yes</label> <br/></p>
+    <label for="choice2">Yes</label> <br/>
 
-<p>
+
     <label for="questionnaire">Best days to contact you:</label>
     <input type="radio" id="choice1" name="questionnaire" value="m">
     <label for="choice1">M</label>
@@ -83,9 +97,10 @@
     <input type="radio" id="choice4" name="questionnaire" value="th">
     <label for="choice1">Th</label>
     <input type="radio" id="choice5" name="questionnaire" value="f">
-    <label for="choice1">F</label> <br/></p>
+    <label for="choice1">F</label> <br/>
 
-    <center><input type="submit" name="submit" value="Send Request"></center>
+
+     <button type="submit" id="submitButton" class="btn btn-default">Send Request</button>
 
     <footer>
       <hr/>
@@ -93,6 +108,6 @@
         646-555-0100</p>
       <hr/>
     </footer>
-
+</div>
 </body>
 </html>
