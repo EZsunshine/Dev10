@@ -36,3 +36,14 @@ function validateItems() {
           }
         }
   }
+
+ document.getElementById("results").style.display = "block";
+ document.getElementById("playButton").innerText = "Play Again";
+ document.getElementById("startingBet").innerText = startingBet;
+ document.getElementById("totalRolls").innerText = rolls;
+ document.getElementById("highestAmountWon").innerText = highestWinning;
+ document.getElementById("rollCountAtHighestAmountWon").innerText = rollsAtMax;
+ // We are returning false so that the form doesn't submit
+ // and so that we can see the results
+ return false;
+}
