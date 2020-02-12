@@ -53,26 +53,22 @@
       </nav>
 
 
-<p>
+
 <div class="w3-container">
+<p>
 <form name="restaurantSite" onsubmit="return validateItems()" class="form-inline">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name"> <br/>
-</form>
 </p>
 
 <p>
-<form name="restaurantSite" onsubmit="return validateItems()" class="form-inline">
     <label for="email">Email:</label>
     <input type="text" id="email" name="email"> <br/>
-</form>
 </p>
 
 <p>
-<form name="restaurantSite" onsubmit="return validateItems()" class="form-inline">
     <label for="phone">Phone:</label>
     <input type="number" id="phone" name="phone"> <br/>
-</form>
 </p>
 
     <label for="reason">Reason for Inquiry:</label>
@@ -94,19 +90,20 @@
 
 
     <label for="questionnaire">Best days to contact you:</label>
-    <input type="radio" id="choice1" name="questionnaire" value="m">
+    <input type="checkbox" id="choice1" name="questionnaire" value="m">
     <label for="choice1">M</label>
-    <input type="radio" id="choice2" name="questionnaire" value="t">
+    <input type="checkbox" id="choice2" name="questionnaire" value="t">
     <label for="choice1">T</label>
-    <input type="radio" id="choice3" name="questionnaire" value="w">
+    <input type="checkbox" id="choice3" name="questionnaire" value="w">
     <label for="choice1">W</label>
-    <input type="radio" id="choice4" name="questionnaire" value="th">
+    <input type="checkbox" id="choice4" name="questionnaire" value="th">
     <label for="choice1">Th</label>
-    <input type="radio" id="choice5" name="questionnaire" value="f">
+    <input type="checkbox" id="choice5" name="questionnaire" value="f">
     <label for="choice1">F</label> <br/>
 
 
      <button type="submit" id="submitButton" class="btn btn-default">Send Request</button>
+</form>
 
     <footer>
       <hr/>

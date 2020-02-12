@@ -8,7 +8,7 @@ function validateItems() {
   var name = document.forms["restaurantSite"]["name"].value;
   var email = document.forms["restaurantSite"]["email"].value;
   var phone = document.forms["restaurantSite"]["phone"].value;
-  if (name == "" || isNaN(name)) {
+  if (name == "" || number) {
     alert("Name must be filled in with characters.");
     document.forms["restaurantSite"]["name"].parentElement.className = "form-group has-error";
     document.forms["restaurantSite"]["name"].focus();
