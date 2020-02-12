@@ -1,4 +1,23 @@
+function validateItems() {
+  var startingBet = document.forms["luckySevens"]["startingBet"].value;
+  if (num == "") {
+    alert("Must fill in a number.")
+    document.forms["luckySevens"]["startingBet"].parentElement.className = "form-group has-error";
+    document.forms["luckySevens"]["startingBet"].focus();
+    return false;
+  }
+  if (num <= 0) {
+    alert("Starting bet must be greater than 0.")
+    document.forms["luckySevens"]["startingBet"].parentElement.className = "form-group has-error";
+    document.forms["luckySevens"]["startingBet"].focus();
+    return false;
+  }
+}
+
+
+
 function luckySevens() {
+    validateItems();
     var stBet = document.getElementById("startingBet").value;
     var money = stBet;
     var rolls = 0;
