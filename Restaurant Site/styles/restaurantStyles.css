@@ -1,0 +1,19 @@
+/*
+Creator: Elaine Zhu
+Date created: 2/2/2020
+Date last modified: 2/11/2020
+*/
+header, footer {
+  background-color: white;
+  color: black;
+  height: 100px;
+  text-align: center;
+}
+header {
+  color: #ff0000;
+  font-family: fantasy;
+  font-size: xx-large;
+}
+a:hover {
+  font-family: bold;
+}
