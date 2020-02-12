@@ -17,3 +17,8 @@ header {
 a:hover {
   font-family: bold;
 }
+nav {
+  border-top: 3px solid lightgray;
+  border-bottom: 3px solid lightgray;
+  margin-top: 4px;
+}
